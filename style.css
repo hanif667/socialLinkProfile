@@ -1,0 +1,128 @@
+@font-face {
+  font-family: inter;
+  src: url(assets/fonts/static/Inter-Regular.ttf);
+}
+@font-face {
+  font-family: interBold;
+  src: url(assets/fonts/static/Inter-Bold.ttf);
+}
+@font-face {
+  font-family: interSemibold;
+  src: url(assets/fonts/static/Inter-SemiBold.ttf);
+}
+:root {
+  --Green: hsl(75, 94%, 57%);
+  --White: hsl(0, 0%, 100%);
+  --Grey700: hsl(0, 0%, 20%);
+  --Grey800: hsl(0, 0%, 12%);
+  --Grey900: hsl(0, 0%, 8%);
+}
+body {
+  font-family: inter;
+  background-color: var(--Grey900);
+}
+.mainHead {
+  background-color: var(--Grey900);
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.head {
+  background-color: var(--Grey800);
+  width: 370px;
+  margin: 20px 0;
+  border-radius: 15px;
+  padding: 25px;
+}
+.main {
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  justify-content: center;
+  align-items: center;
+}
+img {
+  display: block;
+  border-radius: 50%;
+  transform: translateX(25%);
+  margin: 10px 0 0 0;
+}
+h1 {
+  color: var(--White);
+  text-align: center;
+}
+address {
+  font-style: normal;
+  font-size: 18px;
+  color: var(--Green);
+  margin: -10px 0 0 0;
+  font-family: interSemibold;
+  text-align: center;
+}
+p {
+  margin: 28px 0 0;
+  color: var(--White);
+  margin: 30px 0 -5px 0;
+}
+.social {
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.a {
+  margin: 20px 0 3px;
+  width: 330px;
+  height: 50px;
+  background-color: var(--Grey700);
+  color: var(--White);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.a:hover {
+  background-color: var(--Green);
+  color: #1b1b1b;
+  transition: 0.3s;
+  font-size: 17px;
+  font-weight: bold;
+}
+@media all and (max-width: 375px) {
+  .head {
+    width: 280px;
+    margin: 20px 0;
+    padding: 25px;
+  }
+  img {
+    margin: 5px 0 0 0;
+  }
+  h1 {
+    font-size: 25px;
+  }
+  address {
+    margin: -10px 0 0 0;
+    font-size: 15px;
+  }
+  p {
+    margin: 10px 0 0;
+    margin: 20px 0 -15px 0;
+    text-align: center;
+  }
+  .social {
+    margin-top: 20px;
+  }
+  .a {
+    margin: 20px 0 0px;
+    width: 260px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 14px;
+  }
+  .a:hover {
+    font-weight: normals;
+    font-size: 15px;
+  }
+}
